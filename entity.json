@@ -1,0 +1,10 @@
+{
+    "idPrograma": 87,
+    "descricao": "TESTIN",
+    "ordemEnvio": "asc",
+    "minHorarioFuncionamento": "09:00",
+    "maxHorarioFuncionamento": "22:00",
+    "gapMinSegundos": 15,
+    "gapMaxSegundos": 30,
+    "verificaNovaMensagemMinutos": 2
+}
