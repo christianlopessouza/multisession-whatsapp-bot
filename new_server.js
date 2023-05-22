@@ -73,6 +73,10 @@ class WhatsAppClient {
                 const chatId = await client.getNumberId(number);
                 await client.sendMessage(chatId._serialized, message);
                 addMensagensEnviadas(id, true)
+
+                // Atraso aleatório de 10 a 20 segundos (em milissegundos)
+                const delay = Math.floor(Math.random() * 10000) + 10000;
+                await new Promise(resolve => setTimeout(resolve, delay));
             } catch (error) {
                 addMensagensEnviadas(id, false)
             }
